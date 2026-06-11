@@ -121,8 +121,10 @@ body .modal__body{background:#1e222d!important;border:1px solid #2a2e39!importan
 section p,section li{opacity:1!important}
 .cards-block__text,.cards-block__text p,.steps-item__text,.sec__item p{opacity:1!important;color:#b2b5be!important}
 .navigation .nav-menu .nav-link:hover{background:rgba(0,200,5,.08)!important;color:#00c805!important}
-.header__top-text{opacity:1!important;font-size:11px!important;color:#b2b5be!important;letter-spacing:.03em}
+.header__top-text{opacity:1!important;font-size:11px!important;color:#b2b5be!important;letter-spacing:.03em;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;padding:5px 12px!important;line-height:1!important;box-sizing:border-box!important;height:auto!important}
 .header__top-text a{color:#00c805!important}
+@media (max-width:560px){.header__top-text{font-size:10px!important;letter-spacing:0!important}.header__top-text .htt-mid{display:none}}
+@media (max-width:360px){.header__top-text .htt-brand{display:none}}
 .slider-item__title,.review-item h4,.review-item .name{color:#fff!important}
 table,.compare-table{opacity:1!important}
 .faq__item p,.faq__item .faq__answer{color:#b2b5be!important;opacity:1!important}
@@ -188,7 +190,7 @@ input.phone-de:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px #131722 inset!im
  <div class="page-site with-timer" id=page-site>
  <header class="header header--transparent" data-header-hide=1>
  <div class=header__top-text>
- Crypto-Traders Pro · Offizielle Handelsplattform · <a href=https://crypto-traders.co/ target=_blank>crypto-traders.co</a>
+ <span class=htt-brand>Crypto-Traders Pro · </span><span class=htt-mid>Offizielle Handelsplattform · </span><a href=https://crypto-traders.co/ target=_blank>crypto-traders.co</a>
  </div>
  
  <div class=container>
